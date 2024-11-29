@@ -1,0 +1,640 @@
+{
+	"info": {
+		"_postman_id": "b5dacf3b-ee24-4eb7-be99-de072d4151d8",
+		"name": "Secure Access Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29256485"
+	},
+	"item": [
+		{
+			"name": "permission",
+			"item": [
+				{
+					"name": "permission",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/admin/permission",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permission",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"\"\n    \"permission_name\":\"test\",\n    \"default\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/permission",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"permission_name\":\"test\",\n    \"default\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/permission",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permission",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"6748a2f6cae68f0d02f01269\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/permission",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"6748b39ea6b10e3506123a3f\",\n    \"category_name\":\"entertainment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category_name\":\"travel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"6746dc57d7fde05bdd600d25\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"\"\n    \"permission_name\":\"test\",\n    \"default\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"permission_name\":\"test\",\n    \"default\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"6748a2f6cae68f0d02f01269\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/permission",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"Neha@gmail.com\",\n    \"password\":\"neha@#123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"moderator\",\n    \"email\":\"moderator@gmail.com\",\n    \"password\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/admin/role",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role_name\":\"test\",\n    \"value\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/role",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4NTQ2ODYsImV4cCI6MTczMjg2MTg4Nn0.tWBsw3J_NLoSnYsI08XyBYmrLsCJoKeyIM6CrITBKJ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4NTQ2ODYsImV4cCI6MTczMjg2MTg4Nn0.tWBsw3J_NLoSnYsI08XyBYmrLsCJoKeyIM6CrITBKJ0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8001/api/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userrole",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3NDQ3MzJiMjE0ZGJhYzliZDFjYzI1ZSIsIm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkU2l4R2x2UjFTTTBUOHNIUGpVZFcvT0l3dmRTNGc1V2N3SmdnL2xpSXNuczZTT3E4OWl2TFMiLCJyb2xlIjoxLCJfX3YiOjB9LCJpYXQiOjE3MzI4MTMzODUsImV4cCI6MTczMjgyMDU4NX0._QTLABgSLb2KkfhATG1RrAf4-hjAbynMO4LVVxFLD6Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role_name\":\"test\",\n    \"value\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/admin/role",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

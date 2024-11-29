@@ -147,7 +147,7 @@ const updateCategory = async(req,res)=>{
        
         return res.status(200).json({
             success: true,
-            msg: 'Category Deleted Successfully!',
+            msg: 'Category Updated Successfully!',
             data:updatedData
         });
     }

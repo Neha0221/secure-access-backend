@@ -1,6 +1,6 @@
 const { validationResult } = require('express-validator');
 const Post=require('../models/postModel');
-const { findOne } = require('../models/userModel');
+
 const createPost = async(req,res)=>{
     try{
         const errors = validationResult(req);
@@ -52,13 +52,12 @@ const getPosts = async(req,res)=>{
                 errors:errors.array()
             });
         } 
-        const { id } = req.body;
-        const isExists=await Post.findOne({_id:id});
-        if(!isExists){
-        }
+        
+        const posts=await Post.find();
+        
         return res.status(200).json({
             success: true,
-            msg: 'Post Deleted Successfully',
+            msg: 'Post fetched  Successfully',
             data: posts
         });
     }
@@ -72,7 +71,6 @@ const getPosts = async(req,res)=>{
 
 const deletePost = async(req,res)=>{
     try{
-
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.status(200).json({ 

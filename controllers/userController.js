@@ -48,7 +48,7 @@ const createUser = async(req,res)=>{
         
         const user = new User(obj);
         const userData=await user.save();
-        console.log(password);
+        
         return res.status(200).json({
             success: true,
             msg:"User created Successfully",
@@ -63,6 +63,72 @@ const createUser = async(req,res)=>{
     }
 }
 
+
+const updateUserRole = async(req,res)=>{
+    try{
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ 
+                status: false,
+                msg:'Errors',
+                errors:errors.array()
+            });
+        } 
+
+        const {id,role}=req.body;
+
+        const isExists=await User.findOne({
+            _id:id
+        })
+
+        if(!isExists){
+            return res.status(400).json({
+                success: false,
+                msg:'User does not exist'
+            });
+        }
+
+        const updatedRole=await User.findByIdAndUpdate({_id:id},{
+            $set: {role:role}
+        }, {new : true});
+
+        
+        return res.status(200).json({
+            success: true,
+            msg:"Updated role Successfully",
+            data:updatedRole
+        });
+    }
+    catch(error){
+        return res.status(400).json({
+            success: false,
+            msg: error.message
+        });
+    }
+}
+
+const getUsers = async(req,res)=>{
+    try{
+        
+        const users = await User.find({}, { password: 0 });
+
+        return res.status(200).json({
+            success: true,
+            msg: 'Users Fetched Successfully',
+            data: users
+        });
+        
+    }
+    catch(error){
+        return res.status(400).json({
+            success: false,
+            msg: error.message
+        });
+    }
+}
+
 module.exports={
-    createUser
+    createUser,
+    updateUserRole,
+    getUsers
 }

@@ -70,7 +70,7 @@ const loginUser = async (req, res) => {
         if(!userData){
             return res.status(400).json({
                 success: false,
-                msg:'Email & password are incorrect'
+                msg:'Email is incorrect'
             });
         }
         
@@ -78,7 +78,7 @@ const loginUser = async (req, res) => {
         if(!isValidPassword){
             return res.status(400).json({
                 success: false,
-                msg:'Email & password are incorrect'
+                msg:'Password is incorrect'
             });
         }
 

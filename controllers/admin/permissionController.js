@@ -18,7 +18,8 @@ const addPermission = async(req,res)=>{
             permission_name:{
                 $regex:permission_name,
                 $options:'i'
-            }
+            },
+            
         });
         if(isExists){
             return res.status(400).json({
